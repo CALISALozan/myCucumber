@@ -75,11 +75,11 @@ public class AmazonStepdefinitions {
         String actualAramaSonucu = amazonPage.aramaSonucuElementi.getText();
         Assert.assertTrue(actualAramaSonucu.contains(arananKelime));
     }
-
+/*
     @And("{int} saniye bekler")
     public void saniyeBekler(int saniye) {
     }
-/*
+
         try {
             Thread.sleep(saniye*1000);
         } catch (InterruptedException e) {
