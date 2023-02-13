@@ -63,17 +63,6 @@ public class AmazonStepdefinitions {
 
         Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
     }
-/*
-    @And("{int} saniye bekler")
-    public void saniyeBekler(int saniye) {
-
-        try {
-            Thread.sleep(saniye*1000);
-        } catch (InterruptedException e) {
-
-        }
-    }
-
     @Then("amazon arama kutusuna {string} yazip aratir")
     public void amazonAramaKutusunaYazipAratir(String aranacakKelime) {
 
@@ -81,12 +70,26 @@ public class AmazonStepdefinitions {
         amazonPage.amazonAramaKutusu.sendKeys(aranacakKelime + Keys.ENTER);
 
     }
-
     @And("arama sonuclarinin {string} icerdigini test eder")
     public void aramaSonuclarininIcerdiginiTestEder(String arananKelime) {
-        String actualAramaSonucu= amazonPage.aramaSonucuElementi.getText();
-
+        String actualAramaSonucu = amazonPage.aramaSonucuElementi.getText();
         Assert.assertTrue(actualAramaSonucu.contains(arananKelime));
+    }
+
+    @And("{int} saniye bekler")
+    public void saniyeBekler(int saniye) {
+    }
+/*
+        try {
+            Thread.sleep(saniye*1000);
+        } catch (InterruptedException e) {
+
+        }
+    }
+
+
+
+
 
     }
 
@@ -160,8 +163,8 @@ public class AmazonStepdefinitions {
 
         Assert.assertTrue(actualOrtalamaFiyat<ortalamaFiyat);
 
-
+*/
     }
-    */
 
-}
+
+
