@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-//import utilities.ReusableMethods;
+import utilities.ReusableMethods;
 
 import java.util.List;
 
@@ -63,22 +63,9 @@ public class AmazonStepdefinitions {
 
         Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
     }
-    @Then("amazon arama kutusuna {string} yazip aratir")
-    public void amazonAramaKutusunaYazipAratir(String aranacakKelime) {
 
-        amazonPage= new AmazonPage();
-        amazonPage.amazonAramaKutusu.sendKeys(aranacakKelime + Keys.ENTER);
-
-    }
-    @And("arama sonuclarinin {string} icerdigini test eder")
-    public void aramaSonuclarininIcerdiginiTestEder(String arananKelime) {
-        String actualAramaSonucu = amazonPage.aramaSonucuElementi.getText();
-        Assert.assertTrue(actualAramaSonucu.contains(arananKelime));
-    }
-/*
     @And("{int} saniye bekler")
     public void saniyeBekler(int saniye) {
-    }
 
         try {
             Thread.sleep(saniye*1000);
@@ -87,9 +74,19 @@ public class AmazonStepdefinitions {
         }
     }
 
+    @Then("amazon arama kutusuna {string} yazip aratir")
+    public void amazonAramaKutusunaYazipAratir(String aranacakKelime) {
 
+        amazonPage= new AmazonPage();
+        amazonPage.amazonAramaKutusu.sendKeys(aranacakKelime + Keys.ENTER);
 
+    }
 
+    @And("arama sonuclarinin {string} icerdigini test eder")
+    public void aramaSonuclarininIcerdiginiTestEder(String arananKelime) {
+        String actualAramaSonucu= amazonPage.aramaSonucuElementi.getText();
+
+        Assert.assertTrue(actualAramaSonucu.contains(arananKelime));
 
     }
 
@@ -162,9 +159,5 @@ public class AmazonStepdefinitions {
         System.out.println(actualOrtalamaFiyat);
 
         Assert.assertTrue(actualOrtalamaFiyat<ortalamaFiyat);
-
-*/
     }
-
-
-
+}
