@@ -1,15 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.206">
-    <testcase classname="US1006 Kullanici configuration dosyasindaki bilgilerle login olabilmeli" name="TC09 Gecerli kullanici adi ve sifre ile Pozitif Login Testi" time="16.809">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="45.223">
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli" time="13.249">
         <system-out>
-            <![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
-Then cookies e click yapar..................................................passed
-Then ilk sayfa login linkine click yapar....................................passed
-And kullanici kutusuna "qdGecerliUsername" yazar............................passed
-And password kutusuna "qdGecerliPassword" yazar.............................passed
-Then login butonuna basar...................................................passed
-And basarili giris yapildigini test eder....................................passed
+            <![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Ilker" yazar.......................................passed
+And Last name kutusuna "Bulut" yazar........................................passed
+And position kutusuna "QA" yazar............................................passed
+And Office kutusuna "Istanbul" yazar........................................passed
+And Extension kutusuna "levent" yazar.......................................passed
+And Start date kutusuna "2021-01-01" yazar..................................passed
+And Salary kutusuna "20000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Ilker" ile arama yapar......................................passed
+Then isim bolumunde "Ilker" oldugunu dogrular...............................passed
 And 3 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 2" time="8.175">
+        <system-out>
+            <![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Ramazan" yazar.....................................passed
+And Last name kutusuna "Can" yazar..........................................passed
+And position kutusuna "QA lead" yazar.......................................passed
+And Office kutusuna "Ankara" yazar..........................................passed
+And Extension kutusuna "Kizilay" yazar......................................passed
+And Start date kutusuna "2021-10-01" yazar..................................passed
+And Salary kutusuna "25000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Ramazan" ile arama yapar....................................passed
+Then isim bolumunde "Ramazan" oldugunu dogrular.............................passed
+And 3 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 3" time="7.877">
+        <system-out>
+            <![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Sule" yazar........................................passed
+And Last name kutusuna "Saglam" yazar.......................................passed
+And position kutusuna "Test lead" yazar.....................................passed
+And Office kutusuna "Izmir" yazar...........................................passed
+And Extension kutusuna "Konak" yazar........................................passed
+And Start date kutusuna "2022-02-02" yazar..................................passed
+And Salary kutusuna "23000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Sule" ile arama yapar.......................................passed
+Then isim bolumunde "Sule" oldugunu dogrular................................passed
+And 3 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 4" time="7.876">
+        <system-out>
+            <![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Yasar" yazar.......................................passed
+And Last name kutusuna "U" yazar............................................passed
+And position kutusuna "QA" yazar............................................passed
+And Office kutusuna "Istanbul" yazar........................................passed
+And Extension kutusuna "Kadikoy" yazar......................................passed
+And Start date kutusuna "2023-01-01" yazar..................................passed
+And Salary kutusuna "25000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Yasar" ile arama yapar......................................passed
+Then isim bolumunde "Yasar" oldugunu dogrular...............................passed
+And 3 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 5" time="7.44">
+        <system-out>
+            <![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Meryem" yazar......................................passed
+And Last name kutusuna "Toprak" yazar.......................................passed
+And position kutusuna "QA lead" yazar.......................................passed
+And Office kutusuna "Istanbul" yazar........................................passed
+And Extension kutusuna "levent" yazar.......................................passed
+And Start date kutusuna "2022-11-11" yazar..................................passed
+And Salary kutusuna "20000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Meryem" ile arama yapar.....................................passed
+Then isim bolumunde "Meryem" oldugunu dogrular..............................passed
+And 3 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
 ]]>
         </system-out>
     </testcase>

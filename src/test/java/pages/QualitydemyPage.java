@@ -12,7 +12,7 @@ public class QualitydemyPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath = "//a[@onclick='cookieAccept();']")
-    public WebElement cookiesLinki;
+    public WebElement cookiesButtonu;
 
     @FindBy(xpath = "//*[text()='Log in']")
     public WebElement ilkLoginLinki;

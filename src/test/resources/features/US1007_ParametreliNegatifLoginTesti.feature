@@ -4,6 +4,7 @@ Feature: Kullanici yanlis bilgilerle giris yapamaz
   Scenario: TC10 Gecerli kullanici adi ve  gecersiz sifre ile negatif Login Testi
 
     Given kullanici "qdUrl" anasayfaya gider
+    Then cookies e click yapar
     Then ilk sayfa login linkine click yapar
     And kullanici kutusuna "qdGecerliUsername" yazar
     And password kutusuna "qdGecersizPassword" yazar
@@ -15,6 +16,7 @@ Feature: Kullanici yanlis bilgilerle giris yapamaz
   Scenario: TC11 Gecersiz kullanici adi ve  gecerli sifre ile negatif Login Testi
 
     Given kullanici "qdUrl" anasayfaya gider
+    Then cookies e click yapar
     Then ilk sayfa login linkine click yapar
     And kullanici kutusuna "qdGecersizUsername" yazar
     And password kutusuna "qdGecerliPassword" yazar
@@ -26,6 +28,7 @@ Feature: Kullanici yanlis bilgilerle giris yapamaz
   Scenario: TC12 Gecersiz kullanici adi ve  gecersiz sifre ile negatif Login Testi
 
     Given kullanici "qdUrl" anasayfaya gider
+    Then cookies e click yapar
     Then ilk sayfa login linkine click yapar
     And kullanici kutusuna "qdGecersizUsername" yazar
     And password kutusuna "qdGecersizPassword" yazar

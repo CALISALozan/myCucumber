@@ -11,7 +11,7 @@ public class QualitydemyStepdefinitions {
 
     @Then("cookies e click yapar")
     public void cookies_e_click_yapar(){
-        qualitydemyPage.cookiesLinki.click();
+        qualitydemyPage.cookiesButtonu.click();
 
         }
 
