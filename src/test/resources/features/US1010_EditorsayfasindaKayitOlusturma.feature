@@ -1,6 +1,6 @@
 
 Feature: US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur
-  @wip
+
 
   Scenario Outline: TC15 Editor sayfasinda birden fazla kayit olusturabilmeli
 
