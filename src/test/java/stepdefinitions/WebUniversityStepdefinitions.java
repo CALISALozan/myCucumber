@@ -1,6 +1,6 @@
 package stepdefinitions;
 
-//import com.github.javafaker.Faker;
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.WebUniversityPage;
@@ -11,10 +11,11 @@ import java.util.Set;
 public class WebUniversityStepdefinitions {
     WebUniversityPage webUniversityPage= new WebUniversityPage();
     String ilkSayfaHandleDegeri;
-   // Faker faker= new Faker();
+   Faker faker= new Faker();
 
     @Then("Login Portal elementine kadar asagi iner")
     public void login_portal_elementine_kadar_asagi_iner() {
+
         // asagi inmeye gerek kalmadi
     }
     @Then("Login Portal a tiklar")
@@ -50,6 +51,7 @@ public class WebUniversityStepdefinitions {
     }
     @Then("webuniversity login butonuna basar")
     public void webuniversity_login_butonuna_basar() {
+
         webUniversityPage.loginButonu.click();
     }
     @Then("Popup ta cikan yazinin validation failed oldugunu test eder")
@@ -60,14 +62,17 @@ public class WebUniversityStepdefinitions {
     }
     @Then("OK diyerek popup i kapatir")
     public void ok_diyerek_popup_i_kapatir() {
+
         Driver.getDriver().switchTo().alert().accept();
     }
     @Then("ilk sayfaya geri doner")
     public void ilk_sayfaya_geri_doner() {
+
         Driver.getDriver().switchTo().window(ilkSayfaHandleDegeri);
     }
     @Then("ilk sayfaya dondugunu test eder")
     public void ilk_sayfaya_dondugunu_test_eder() {
+
         Assert.assertTrue(webUniversityPage.contactUsLinki.isDisplayed());
     }
 }
