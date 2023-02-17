@@ -82,8 +82,8 @@ public class AutomationExerciseStepdefinitions {
     public void user_register_butonuna_basar() {
         automationExercisePage.createAccountButonu.click();
     }
-    @Then("hesap olustugunu dogrulayin")
-    public void hesap_olustugunu_dogrulayin() {
+    @Then("hesap olustugunu test edin")
+    public void hesap_olustugunu_test_edin() {
 
         Assert.assertTrue(automationExercisePage.accountCreatedYaziElementi.isDisplayed());
 

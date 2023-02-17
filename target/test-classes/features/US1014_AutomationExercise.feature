@@ -1,6 +1,6 @@
 Feature: US1014 Automation exercise sitesinde kullanici olusturma
 
-  @wip
+
   Scenario: TC19 Kullanici automation excercise sayfasinda kullanici olusturabilmeli
 
     Given kullanici "automationUrl" anasayfaya gider
@@ -9,4 +9,4 @@ Feature: US1014 Automation exercise sitesinde kullanici olusturma
     And Create an Account butonuna basar
     And user kisisel bilgilerini ve iletisim bilgilerini girer
     And user Register butonuna basar
-    Then hesap olustugunu dogrulayin
+    Then hesap olustugunu test edin
